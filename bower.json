@@ -1,0 +1,15 @@
+{
+    "name": "chloe-i18n",
+    "version": "0.0.1",
+    "private": false,
+    "main": [
+        "src/"
+    ],
+    "dependencies": {
+        "chloe": "0.0.3"
+    },
+    "ignore": [
+        "bower_components",
+        "node_modules"
+    ]
+}
