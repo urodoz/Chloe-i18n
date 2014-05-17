@@ -4,6 +4,8 @@
 
 module Urodoz.i18n.Libraries {
 
+    declare var moment:any;
+
     /**
      * @class Urodoz.i18n.Libraries.TranslationsLibrary
      */
@@ -42,6 +44,10 @@ module Urodoz.i18n.Libraries {
             _.each(keys, function(key:string){
                 self.currentTranslationSet.set(key, attributesToDump[key]);
             });
+
+            //Change the locale of the moment library
+            var momentLibrary:any = moment;
+            momentLibrary.lang(locale);
         }
 
         /**
